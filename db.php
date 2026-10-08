@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 $dbHost = '127.0.0.1';
-$dbName = 'g_site';
+$dbName = 'blog_site';
 $dbUser = 'root';
 $dbPassword = '';
 

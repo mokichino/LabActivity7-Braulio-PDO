@@ -5,7 +5,7 @@ A text-only PHP/PDO blog feed for the G-Site lab activity.
 ## Setup
 
 1. Start Apache and MySQL in XAMPP.
-2. In phpMyAdmin, select or create the `g_site` database and run the SQL shown below. It creates exactly three tables: `users`, `posts`, and `comments`.
+2. In phpMyAdmin, select or create the `blog_site` database and run the SQL shown below. It creates exactly three tables: `users`, `posts`, and `comments`.
 3. Confirm the MySQL credentials in `db.php` (the default XAMPP `root` account has no password).
 4. Visit `http://localhost/LabActivity7-Braulio-PDO/register.php`.
 
@@ -14,8 +14,8 @@ The application uses PDO prepared statements, native `password_hash`/`password_v
 ## phpMyAdmin SQL
 
 ```sql
-CREATE DATABASE IF NOT EXISTS g_site CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE g_site;
+CREATE DATABASE IF NOT EXISTS blog_site CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE blog_site;
 
 CREATE TABLE users (
 	user_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
